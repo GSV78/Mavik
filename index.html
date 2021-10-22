@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,11 +22,11 @@
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__list-link">О ДРОНЕ</a></li>
-                        <li class="menu__item"><a href="#" class="menu__list-link">ПРЕИМУЩЕСТВА</a></li>
-                        <li class="menu__item"><a href="#" class="menu__list-link">ХАРАКТЕРИСТИКИ</a></li>
-                        <li class="menu__item"><a href="#" class="menu__list-link">ВОПРОСЫ</a></li>
-                        <li class="menu__item"><a href="#" class="menu__list-link">КОНТАКТЫ</a></li>
+                        <li class="menu__item"><a href="#products" class="menu__list-link">О ДРОНЕ</a></li>
+                        <li class="menu__item"><a href="#benefits" class="menu__list-link">ПРЕИМУЩЕСТВА</a></li>
+                        <li class="menu__item"><a href="#specification" class="menu__list-link">ХАРАКТЕРИСТИКИ</a></li>
+                        <li class="menu__item"><a href="#questions" class="menu__list-link">ВОПРОСЫ</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__list-link">КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
                 <div class="header__info">
@@ -38,37 +38,40 @@
     </header>
 
     <section class="page-section top">
-        <div class="container">
-            <div class="top__inner">
-                <h1 class="title top__title">Mavic 2 Pro</h1>
-                <img src="images/mavik.png" alt="">
-                <p class="top__text">Квадрокоптер Dji Mavic 2 Pro
-                    с профессиональной камерой Hasselblad</p>
-                <ul class="top__social-list">
-                    <li class="top__social-item">
-                        <a href="#" class="top__social-link">
-                            <img src="images/facebook.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="top__social-item">
-                        <a href="#" class="top__social-link">
-                            <img src="images/youtube.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="top__social-item">
-                        <a href="#" class="top__social-link">
-                            <img src="images/instagram.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
+        <div class="page-section__wrapper top__wrapper">
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="title top__title">Mavic 2 Pro</h1>
+                    <img src="images/mavik.png" alt="">
+                    <p class="top__text">Квадрокоптер Dji Mavic 2 Pro
+                        с профессиональной камерой Hasselblad</p>
+                    <ul class="top__social-list">
+                        <li class="top__social-item">
+                            <a href="#" class="top__social-link">
+                                <img src="images/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="top__social-item">
+                            <a href="#" class="top__social-link">
+                                <img src="images/youtube.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="top__social-item">
+                            <a href="#" class="top__social-link">
+                                <img src="images/instagram.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="scroll__btn">
-            <a href="#products"><img src="images/arrow-down.svg" alt=""></a>
+            <div class="scroll__btn">
+                <a href="#products"><img src="images/arrow-down.svg" alt=""></a>
+            </div>
         </div>
     </section>
 
     <section id="products" class="page-section products">
+        <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
             <div class="products__inner">
@@ -110,9 +113,11 @@
         <div class="scroll__btn">
             <a href="#benefits"><img src="images/arrow-down.svg" alt=""></a>
         </div>
+    </div>
     </section>
 
     <section id="benefits" class="page-section benefits">
+        <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title benefits__title">Преимущества</h3>
             <div class="benefits__items">
@@ -172,9 +177,11 @@
         <div class="scroll__btn">
             <a href="#specification"><img src="images/arrow-down.svg" alt=""></a>
         </div>
+    </div>
     </section>
 
     <section id="specification" class="page-section specification">
+        <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title specification__title">Характеристики</h3>
             <div class="specification__inner">
@@ -211,9 +218,11 @@
         <div class="scroll__btn">
             <a href="#questions"><img src="images/arrow-down.svg" alt=""></a>
         </div>
+    </div>
     </section>
 
     <section id="questions" class="page-section questions">
+        <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title questions__title">Остались вопросы?</h3>
             <div class="questions__items">
@@ -254,9 +263,11 @@
         <div class="scroll__btn">
             <a href="#contacts"><img src="images/arrow-down.svg" alt=""></a>
         </div>
+    </div>
     </section>
 
     <section id="contacts" class="page-section contacts">
+        <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title">Контакты</h3>
             <div class="contacts__inner">
@@ -264,17 +275,20 @@
                     <div class="contacts__info-box">
                         <p class="contacts__info-title">Киев</p>
                         <a href="tel:+80505676767" class="contacts__info-phone">+8 (050) 567– 67 – 67</a>
-                        <a href="mailto:dgi.mavic2pro.kiev@mail.ru" class="contacts__info-email">dgi.mavic2pro.kiev@mail.ru</a>
+                        <a href="mailto:dgi.mavic2pro.kiev@mail.ru"
+                            class="contacts__info-email">dgi.mavic2pro.kiev@mail.ru</a>
                     </div>
                     <div class="contacts__info-box">
                         <p class="contacts__info-title">Москва</p>
                         <a href="tel:+74995676767" class="contacts__info-phone">+7 (499) 567– 67 – 67</a>
-                        <a href="mailto:dgi.mavic2pro.moscow@mail.ru" class="contacts__info-email">dgi.mavic2pro.moscow@mail.ru</a>
+                        <a href="mailto:dgi.mavic2pro.moscow@mail.ru"
+                            class="contacts__info-email">dgi.mavic2pro.moscow@mail.ru</a>
                     </div>
                     <div class="contacts__info-box">
                         <p class="contacts__info-title">Минск</p>
                         <a href="tel:+375175676767" class="contacts__info-phone">+3 (7517) 567– 67 – 67</a>
-                        <a href="mailto:dgi.mavic2pro.kiev@mail.ru" class="contacts__info-email">dgi.mavic2pro.minsk@mail.ru</a>
+                        <a href="mailto:dgi.mavic2pro.kiev@mail.ru"
+                            class="contacts__info-email">dgi.mavic2pro.minsk@mail.ru</a>
                     </div>
                 </div>
                 <div class="contacts__form">
@@ -310,6 +324,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <footer class="footer">
