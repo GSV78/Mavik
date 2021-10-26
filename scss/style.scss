@@ -110,9 +110,6 @@
     &__slider-box{
         position: relative;
         padding-top: 135px;
-        // min-height: 300px;
-        // flex: 1;
-
     }
     &__slider-text{
         max-width: 281px;
@@ -133,55 +130,69 @@
             content: "";
             border: solid 4px #fff;
             position: absolute;
-            bottom: 42px;
-            left: 17px;
-            width: 564px;
+            top: -15px;
+            right: -17px;
+            width: 565px;
             height: 280px;
-            display: inline-block;
         }
     }
 }
 
-.slick-prev{
+.slick-arrow{
     position: absolute;
-    bottom: -42px;
+    bottom: -46px;
     right: 0;
-    width: 60px;
-    height: 48px;
-    font-size: 0;
+    padding: 16px 26px;
     z-index: 10;
     border: none;
-    background-image: url(../images/right.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #000;
-    transition: all 0.5s;
-    &:hover{
-        background-color: #fff;
-        background-image: url(../images/right_inv.svg);
+    background-color: #fff;
+    cursor: pointer;
+    svg{
+        stroke: #000;
+    };
+    &.slick-disabled{
+        background-color: #000;    
+        svg{
+            stroke: #fff;
+            }
+    
     }
 }
 
 .slick-next{
-    position: absolute;
-    bottom: -42px;
     right: 60px;
-    width: 60px;
-    height: 48px;
-    font-size: 0;
-    z-index: 10;
-    border: none;
-    background-image: url(../images/left.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #000;
-    transition: all 0.5s;
-    &:hover{
-        background-color: #fff;
-        background-image: url(../images/left_inv.svg);
-    }
-
 }
+
+.benefits{
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    &__item{
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    &__num{
+        bottom: -50px;
+        @extend %ubuntu-bold;
+        font-size: 36px;
+        line-height: 41px;
+    }
+    &__info-title{
+        position: absolute;
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+    }
+    &__info-text{
+        max-width: 300px;
+    }
+}
+
+
 
 
 
