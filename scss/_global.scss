@@ -28,6 +28,9 @@ h6{
     margin: 0;
     font-size: inherit;
 }
+p{
+    margin: 0;
+}
 
 body{
     min-width: 320px;
@@ -42,6 +45,7 @@ body{
     max-width: 1270px;
     padding: 0 15px;
     margin: 0 auto;
+    // height: 100%;
 }
 
 .page-section{
@@ -49,8 +53,7 @@ body{
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    // position: relative;
-    &::before{
+        &::before{
         content: "";
         left: 0;
         right: 0;
