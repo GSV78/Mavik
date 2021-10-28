@@ -240,7 +240,6 @@
     }
     &__info{
         width: 300px;
-        // align-items: start;
     }
     &__info-title{
         @extend %ubuntu-bold;
@@ -256,6 +255,92 @@
     }
 }
 
+.specification{
+    &__title{
+        margin-bottom: 77px;
+    }
+    &__inner{
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+    &__box{
+        position: relative;
+        &-title{
+            @extend %ubuntu-bold;
+            font-size: 21px;
+            line-height: 28px;
+            margin-bottom: 10px;
+       }
+       &-text{
+            font-size: 15px;
+            line-height: 20px;
+            width: 280px;
+       }
+    }
+    &__item-1 {
+        .specification__box:first-child{
+            margin-bottom: 140px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 14px;
+                right: -140px;
+                width: 240px;
+                height: 120px;
+                background-image: url(../images/pointer-1.svg);
+                background-repeat: no-repeat;
+            }
+        }
+        .specification__box:last-child{
+            &::before{
+                content: "";
+                position: absolute;
+                top: -65px;
+                right: -285px;
+                width: 360px;
+                height: 90px;
+                background-image: url(../images/pointer-2.svg);
+                background-repeat: no-repeat;
+            }
+            & p{
+            width: 253px;
+            }
+        }    
+    }
+    &__item-2 {
+        margin-top: 84px;  
+        margin-left: -75px;  
+    }
+    &__item-3 {
+        .specification__box:first-child{
+            margin-bottom: 166px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: -280px;
+                width: 270px;
+                height: 108px;
+                background-image: url(../images/pointer-3.svg);
+                background-repeat: no-repeat;
+            }
+        }    
+        .specification__box:last-child{
+            &::before{
+                content: "";
+                position: absolute;
+                top: -75px;
+                left: -150px;
+                width: 140px;
+                height: 95px;
+                background-image: url(../images/pointer-4.svg);
+                background-repeat: no-repeat;
+            }
+        }
+    }     
+}
 
 
 
