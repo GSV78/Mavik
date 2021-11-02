@@ -47,8 +47,10 @@
         & + .menu__item{
             padding-left: 20px;
         }
+        &.active a {
+            color: orangered;
+        }
     }
-
 }
 
 .top{
