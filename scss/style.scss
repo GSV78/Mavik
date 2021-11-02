@@ -31,7 +31,7 @@
         transition: all 0.3s;
         &:hover{
             background-color: #fff;
-            color: #093428;
+            color: #1C1C1C;
         }
     }
     &__phone{
@@ -284,7 +284,6 @@
         font-size: 15px;
         line-height: 18px;
         width: 280px;
-        font-weight: 300;
     }
     
     &__item{
@@ -354,9 +353,6 @@
 }
 
 .questions{
-    // background-image: url(../images/questions-bg.png);
-    // background-repeat: no-repeat;
-    // background-size: initial;
     &__items{
         max-width: 757px;
         padding-left: 25px;
@@ -366,6 +362,15 @@
         background-color: rgba(0, 0, 0, 0.3);
         width: 690px;
         margin-bottom: 5px;
+        position: relative;
+        &:nth-child(3)::after{
+            content: url('../images/questions-bg.png');
+            position: absolute;
+            top: -33px;
+            right: -392px;
+            width: 320px;
+            height: 125px;
+        }
     }
     &__item-title{
         padding: 20px 10px 20px 40px;
@@ -405,9 +410,107 @@
     }
 }
 
+.contacts{
+    position: relative;
+    &__inner{
+        display: flex;
+        padding-left: 30px;
+    }
+    &__info{
+        width: 300px;
+        margin: 0 60px 0 30px;
+    }
+    &__info-box{
+        margin-bottom: 30px;
 
+    }
+    &__info-title,
+    &__form-title{
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 13px; 
+    }
+    &__info-phone,
+    &__info-email,
+    &__form-text{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    &__info-email:hover{
+        text-decoration: underline;
+    }
+    &__form{
+        margin-right: 106px;
+    }
+    &__form-input{
+        width: 280px;
+        margin: 7px 7px 10px 0;
+    }
+    &__form-textarea{
+        width: 570px;
+        height: 144px;
+        margin-bottom: 20px;
+        resize: none;
+    }
+    &__form-input,
+    &__form-textarea{
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.5); 
+        border: none;
+        color: #fff;
+        @extend %ubuntu-regular;
+        font-size: 13px;
+        line-height: 130%;
+        ::placeholder{
+            @extend %ubuntu-regular;
+            color: rgba(#fff, 0.4);
+            font-size: 13px;
+            line-height: 130%;
+        }
+    }
+    &__form-btn{
+        display: block;
+        padding: 9px 15px;
+        background-color: transparent;
+        border: solid 1px #fff;
+        border-radius: 2px;
+        text-transform: uppercase;
+        @extend %ubuntu-bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+            background-color: #fff;
+            color: #1C1C1C;
+        }
+    }
+    &__social{
+        align-self: center;
+    }
+    &__social-item{
+        margin-bottom: 23px;
+        opacity: 0.5;
+        transition: all 0.5s;
+        &:hover{
+        opacity: 1;
+        }
+    }
+}
 
-
+.footer{
+    position: absolute;
+    bottom: 32px;
+    right: 0;
+    left: 0;
+    font-size: 13px;
+    line-height: 17px;
+    opacity: 0.64;
+    text-align: right;
+}
 
 
 
